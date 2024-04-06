@@ -40,5 +40,9 @@ offset_right = 446.0
 offset_bottom = 415.0
 scale = Vector2(2.46666, 1)
 
+[node name="DoorCollisionTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [connection signal="body_entered" from="DetectFish" to="." method="_on_detect_fish_body_entered"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
